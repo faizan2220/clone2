@@ -1,1 +1,6 @@
+site_name: 'example-docs'
 
+nav:
+
+plugins:
+  - techdocs-core
