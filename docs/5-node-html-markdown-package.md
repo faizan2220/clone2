@@ -71,6 +71,16 @@ Please refer to the following link for a detailed explanation:
 | Page4: Build Strategy    | [Build Strategy](https://confluence.bottomline.tech/display/SPFM/Build+Strategy)                          | Videos                 | In the confluence page videos were added using a widget connectorExported Html file used <iframe> tag to insert videosNHM was not able to add videos and completely ignored the <iframe> tag**Reason:**Markdown doesn't have any syntax for inserting videos we can use HTML <iframe> tag to insert videos in a markdown fileBut Backstage techdocs doesn't support HTML tags in markdown files**Fault:** Backstage techdocs |
 | Page5: Implementation    | [Implementation](https://confluence.bottomline.tech/display/SPFM/Implement+on-behalf+capability)          | Content Alignment      | Few images, code blocks and content were center alignedAfter conversion, they were aligned to the left **Reason:**Markdown does not support alignment for images or text, so you will need to use HTML or CSS to achieve this effect.Backstage techdocs doesn't support HTML tags in markdown filesEven in the backstage docs, they haven't provided any alignment.**Fault:** Backstage Techdocs                             |
 
+## **Confluence to markdown Template:**
+
+Tried converting with the template, and it is almost similar output except with the options.
+
+If we adopt these options we will get the same result in an automated flow.
+
+Please refer to the following link for a detailed explanation:
+
+[Read More](https://github.com/backstage/backstage/pull/16820/files#diff-d92d996859d61264ef8b114a73fbf46dff8bf84d26aa157b71d8f17010e237e8)
+
 ## **Note:**
 
 * Some issues like heading being inserted in the above table or paragraph, adding extra boxes and other issues of pandoc were working fine with NHM.
